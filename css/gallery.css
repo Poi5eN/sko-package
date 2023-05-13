@@ -1,0 +1,33 @@
+.container1{
+    display: flex;
+    width: 90vw;
+}
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 1em;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease;
+    
+}
+.panel h3 {
+    font-size: 2.0rem;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    margin: 0;
+    opacity: 0;
+}
+.panel.active {
+    flex: 5;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease 0.4s;
+}
